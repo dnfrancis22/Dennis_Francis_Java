@@ -6,7 +6,9 @@ public class ConverterIf implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
         String month = "";
-        if (monthNumber == 1) {
+        if (monthNumber < 1 || monthNumber >12) {
+            month = "Please enter a number between 1 and 12";
+        } else if (monthNumber == 1) {
             month = "January";
         }
         return month;

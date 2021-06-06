@@ -16,6 +16,7 @@ public class ConverterIfTest {
     @Test
     public void convertMonth() {
         assertEquals("January", converterIf.convertMonth(1));
+        assertEquals("Please enter a number between 1 and 12", converterIf.convertMonth(14));
     }
 
     @Test
