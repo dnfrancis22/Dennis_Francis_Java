@@ -22,5 +22,6 @@ public class ConverterIfTest {
     @Test
     public void convertDay() {
         assertEquals("Sunday", converterIf.convertDay(1));
+        assertEquals("Please enter a number between 1 and 7", converterIf.convertDay(14));
     }
 }

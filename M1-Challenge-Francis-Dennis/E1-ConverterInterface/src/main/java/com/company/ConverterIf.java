@@ -17,7 +17,9 @@ public class ConverterIf implements Converter {
     @Override
     public String convertDay(int dayNumber) {
         String day = "";
-        if (dayNumber == 1) {
+        if (dayNumber < 1 || dayNumber > 7) {
+            day = "Please enter a number between 1 and 7";
+        } else if (dayNumber == 1) {
             day = "Sunday";
         }
         return day;
