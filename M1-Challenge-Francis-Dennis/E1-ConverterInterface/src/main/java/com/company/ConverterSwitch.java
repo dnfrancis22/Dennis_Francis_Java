@@ -1,6 +1,8 @@
-import com.company.Converter;
+package com.company;
 
-public class ConverterIf implements Converter {
+import com.company.interfaces.Converter;
+
+public class ConverterSwitch implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
         return null;
