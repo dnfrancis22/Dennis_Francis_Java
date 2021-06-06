@@ -20,5 +20,6 @@ public class ConverterIfTest {
 
     @Test
     public void convertDay() {
+        assertEquals("Sunday", converterIf.convertDay(1));
     }
 }

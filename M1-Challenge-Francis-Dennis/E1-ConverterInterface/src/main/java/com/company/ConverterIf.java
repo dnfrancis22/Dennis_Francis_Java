@@ -14,6 +14,10 @@ public class ConverterIf implements Converter {
 
     @Override
     public String convertDay(int dayNumber) {
-        return null;
+        String day = "";
+        if (dayNumber == 1) {
+            day = "Sunday";
+        }
+        return day;
     }
 }
