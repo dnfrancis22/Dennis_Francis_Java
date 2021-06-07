@@ -5,6 +5,7 @@ import com.company.interfaces.Converter;
 public class ConverterSwitch implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
+//        I created a switch case and then IntelliJ suggested and generated an enhanced switch case
         return switch (monthNumber) {
             case 1 -> "January";
             case 2 -> "February";
@@ -24,6 +25,7 @@ public class ConverterSwitch implements Converter {
 
     @Override
     public String convertDay(int dayNumber) {
+//        I created a switch case and then IntelliJ suggested and generated an enhanced switch case
         return switch (dayNumber) {
             case 1 -> "Sunday";
             case 2 -> "Monday";
