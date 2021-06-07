@@ -12,6 +12,10 @@ public class Character {
     private int speed;
     private int attackPower;
 
+    public Character(){
+
+    }
+
     //  Generated constructor with instance variables as parameters
     public Character(String name, int strength, int health, int stamina, int speed, int attackPower) {
         this.name = name;
@@ -72,28 +76,33 @@ public class Character {
     }
 
     //  Abilities
+    public void greet() {
+
+        System.out.println("Hello, I am " + name);
+    }
+
     public void run() {
-        System.out.println("I am running");
+        System.out.println("I can run");
     }
 
     public void attack() {
-        System.out.println("I am attacking");
+        System.out.println("I can attack");
     }
 
     public void heal() {
-        System.out.println("I am healing");
+        System.out.println("I can heal");
     }
 
     public void decreaseHealth() {
-        System.out.println("My Health is decreasing");
+        System.out.println("My Health can decrease");
     }
 
     public void increaseStamina() {
-        System.out.println("My Stamina is increasing");
+        System.out.println("My Stamina can increase");
     }
 
     public void decreaseStamina() {
-        System.out.println("My Stamina is decreasing");
+        System.out.println("My Stamina can decrease");
     }
 
     @Override
@@ -123,46 +132,5 @@ public class Character {
                 ", attackPower=" + attackPower +
                 '}';
     }
-//    - Farmer
-//
-//  - Properties:
-
-//  - Abilities:
-//    - run
-//         - plow
-//         - harvest
-//    - attack
-//    - heal
-//    - decreaseHealth
-//    - increaseStamina
-//    - decreaseStamina
-//
-//- Constable
-//
-//  - Properties
-//    - jurisdiction
-//
-//  - Abilities:
-//    - run
-//         - arrest
-//    - attack
-//    - heal
-//    - decreaseHealth
-//    - increaseStamina
-//    - decreaseStamina
-//
-//- Warrior
-//
-//  - Properties
-//    - shieldStrength (initial value = 100)
-//
-//  - Abilities:
-//    - run
-//    - attack
-//    - heal
-//    - decreaseHealth
-//    - increaseStamina
-//    - decreaseStamina
-//         - decreaseShieldStrength
 
 }
