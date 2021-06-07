@@ -78,7 +78,7 @@ public class Character {
     //  Abilities
     public void greet() {
 
-        System.out.println("Hello, I am " + name);
+        System.out.println("Hello, I am " + name + ". My strength is " + strength + ". My health is " + health + ". My stamina is " + stamina + ". My speed is " + speed + ". My attackPower is " + attackPower);
     }
 
     public void run() {
